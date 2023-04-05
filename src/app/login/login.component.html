@@ -1,20 +1,18 @@
 <div class="maincontainer">
     <mat-card class="matcard">
         <div class="headercontent">
-            <mat-card-title class="mattitle">Sign Up</mat-card-title>
+            <mat-card-title class="mattitle">Sign In</mat-card-title>
             <mat-card-subtitle class="matsubtitle"><b>Create Your Account</b></mat-card-subtitle>
         </div>
-        <div clss="inputfield">
-            <form class="form">
+        <div>
+            <form class="formcontent">
                 <input type="login" class="input" placeholder="Login">
                 <input type="password" class="input" placeholder="Password">
             </form>
         </div>
         <div class="switch">
-            <div class="switch_">
-                <input type="checkbox" id="switch-">
-                <label for="switch-"></label>
-            </div>
+                <mat-slide-toggle color="primary" class="switch_">Remember Me</mat-slide-toggle>
+                <!-- <label for="switch-" (click)="OnMethod()">{{on}}</label> -->
         </div>
         <div class="Regbutton">
             <button>Login</button>
