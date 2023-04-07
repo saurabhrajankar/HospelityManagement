@@ -1,0 +1,17 @@
+<div class="container">
+    <mat-toolbar class="toolbar">
+        <div class="searchbox">
+            <input class="inputsearchbox" type="search" placeholder="Type to search">
+            <img src="../../assets/search.png">
+        </div>
+        <div class="righttool">
+            <button mat-button title="More" [matMenuTriggerFor]="menu">
+                <img src="../../assets/ProfilePic.png" title="Hospital Account">
+                <mat-menu #menu>
+                    <button mat-menu-item>Saurabh Rajankar</button>
+                    <button mat-menu-item>Logout</button>
+                </mat-menu>
+            </button>
+        </div>
+    </mat-toolbar>
+</div>

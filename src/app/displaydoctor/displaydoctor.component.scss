@@ -1,0 +1,76 @@
+//downpart
+.wrapdoctor{
+    //border: 5px solid red;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-left: 11%;
+    width: 85%;
+}
+mat-card{
+height: 50%;
+width: 350px;
+padding: 1px;
+border-radius: 10px;
+box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+b{
+  font-size: x-large    ;  
+}
+.title{
+    //border: 5px solid red;
+    display: flex;
+    margin-left: 153px;
+    margin-top: 80px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+.subtitle{
+    margin-top: 5px;
+}
+span{
+    height:5px;
+    width:40%;
+    margin-bottom: 40px;
+   
+    img{
+      
+        height:30px;
+        width:30px;
+        margin-left: 15px;
+    }
+}
+
+img{
+    margin-left: 0px;
+    height: 320px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.piccard{
+    //border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 228px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #336CFB;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
