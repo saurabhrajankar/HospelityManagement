@@ -1,144 +1,131 @@
-
-<div class="title">Doctors</div >
+<div class="title">Doctors</div>
 <div class="wrapdoctor">
-    <mat-card>
-        <img class="a" src="../../assets/Doc1.jpg" alt="" srcset=""><br>
-        <div class="piccard">
-            <b>Dr.Arun Ashish</b>
-            <p class="subtitle">Cardiologists</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+    <div *ngFor="let doctor of doctorslist">
+        <mat-card>
+            <img src="{{doctor.image}}" alt="pic1"><br>
+            <div class="picescription">
+                <b>{{doctor.name}}</b>
+                <p class="subtitle">{{doctor.specilization}}</p>
+                <span>
+                    <img src="../../assets/Insta" alt="">
+                    <img src="../../assets/fb" alt="">
+                    <img src="../../assets/twee.jpeg" alt="">
+                </span>
+                <div class="ptitle">
+                    <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+                </div>
+                <div class="appbtn">
+                    <button (click)="aptformDialogBox()">Take Appointment</button>
+                </div>
             </div>
-            <div class="appbtn">
-                <button>
-                    Take Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <mat-card class="shadow">
-        <img class="a" src="../../assets/piyush.png" alt="" srcset=""><br>
-        <div class="piccard">
-            <b>Dr.Piyush Patil</b>
-            <p class="subtitle">Dentist</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
-            </div>
-            <div class="appbtn">
-                <button>
-                    Take Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <mat-card class="shadow">
-        <img class="a" src="../../assets/Doc3" alt="" srcset=""><br>
-        <div class="piccard">
-            <b>Dr.Praven Meheta</b>
-            <p class="subtitle">Ophthalmologists</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
-            </div>
-            <div class="appbtn">
-                <button>
-                    Take Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <mat-card class="shadow">
-        <img class="a" src="../../assets/Doc4.jpg" alt="" srcset=""><br>
-        <div class="piccard">
-            <b>Dr.Saurabh Rajankar</b>
-            <p class="subtitle">Theripist</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
-            </div>
-            <div class="appbtn">
-                <button>
-                    Take Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <mat-card class="shadow">
-        <img class="a" src="../../assets/Doc5.jpg" alt="img" ><br>
-        <div class="piccard">
-            <b>Dr.Abhi Mishar</b>
-            <p class="subtitle">Oncologist</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
-            </div>
-            <div class="appbtn">
-                <button>
-                    Take Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <mat-card class="shadow">
-        <img class="a" src="../../assets/Doc6.jpg" alt="" srcset=""><br>
-        <div class="piccard">
-            <b>Dr.Piyush Patil</b>
-            <p class="subtitle">Theripist</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
-            </div>
-            <div class="appbtn">
-                <button>
-                    Take Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <mat-card class="shadow">
-        <img class="a" src="../../assets/Doc1.jpg" alt="" srcset=""><br>
-        <div class="piccard">
-            <b>Dr.Piyush Patil</b>
-            <p class="subtitle">Theripist</p>
-            <span>
-                <img src="../../assets/Insta" alt="" srcset="">
-                <img src="../../assets/fb" alt="" srcset="">
-                <img src="../../assets/twee.jpeg" alt="" srcset="">
-            </span>
-            <div class="ptitle">
-                <p>795 Faclcom Ave,Sult600 SanFranciso</p>
-            </div>
-            <div class="appbtn">
-                <button>
-                    Add Appointment
-                </button>
-            </div>
-        </div>
-    </mat-card>
+        </mat-card>
+    </div>
 </div>
+
+
+
+
+    <!-- <mat-card class=" shadow">
+
+        </mat-card>
+        <mat-card class="shadow">
+            <img class="a" src="../../assets/Doc3" alt="" srcset=""><br>
+            <div class="piccard">
+                <b>Dr.Praven Meheta</b>
+                <p class="subtitle">Ophthalmologists</p>
+                <span>
+                    <img src="../../assets/Insta" alt="" srcset="">
+                    <img src="../../assets/fb" alt="" srcset="">
+                    <img src="../../assets/twee.jpeg" alt="" srcset="">
+                </span>
+                <div class="ptitle">
+                    <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+                </div>
+                <div class="appbtn">
+                    <button>
+                        Take Appointment
+                    </button>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="shadow">
+            <img class="a" src="../../assets/Doc4.jpg" alt="" srcset=""><br>
+            <div class="piccard">
+                <b>Dr.Saurabh Rajankar</b>
+                <p class="subtitle">Theripist</p>
+                <span>
+                    <img src="../../assets/Insta" alt="" srcset="">
+                    <img src="../../assets/fb" alt="" srcset="">
+                    <img src="../../assets/twee.jpeg" alt="" srcset="">
+                </span>
+                <div class="ptitle">
+                    <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+                </div>
+                <div class="appbtn">
+                    <button>
+                        Take Appointment
+                    </button>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="shadow">
+            <img class="a" src="../../assets/Doc5.jpg" alt="img"><br>
+            <div class="piccard">
+                <b>Dr.Abhi Mishar</b>
+                <p class="subtitle">Oncologist</p>
+                <span>
+                    <img src="../../assets/Insta" alt="" srcset="">
+                    <img src="../../assets/fb" alt="" srcset="">
+                    <img src="../../assets/twee.jpeg" alt="" srcset="">
+                </span>
+                <div class="ptitle">
+                    <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+                </div>
+                <div class="appbtn">
+                    <button>
+                        Take Appointment
+                    </button>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="shadow">
+            <img class="a" src="../../assets/Doc6.jpg" alt="" srcset=""><br>
+            <div class="piccard">
+                <b>Dr.Piyush Patil</b>
+                <p class="subtitle">Theripist</p>
+                <span>
+                    <img src="../../assets/Insta" alt="" srcset="">
+                    <img src="../../assets/fb" alt="" srcset="">
+                    <img src="../../assets/twee.jpeg" alt="" srcset="">
+                </span>
+                <div class="ptitle">
+                    <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+                </div>
+                <div class="appbtn">
+                    <button>
+                        Take Appointment
+                    </button>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="shadow">
+            <img class="a" src="../../assets/Doc1.jpg" alt="" srcset=""><br>
+            <div class="piccard">
+                <b>Dr.Piyush Patil</b>
+                <p class="subtitle">Theripist</p>
+                <span>
+                    <img src="../../assets/Insta" alt="" srcset="">
+                    <img src="../../assets/fb" alt="" srcset="">
+                    <img src="../../assets/twee.jpeg" alt="" srcset="">
+                </span>
+                <div class="ptitle">
+                    <p>795 Faclcom Ave,Sult600 SanFranciso</p>
+                </div>
+                <div class="appbtn">
+                    <button>
+                        Add Appointment
+                    </button>
+                </div>
+            </div>
+        </mat-card> 
+    </div> -->

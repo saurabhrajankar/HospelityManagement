@@ -19,13 +19,13 @@ box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
 }
 
 b{
-  font-size: x-large    ;  
+  font-size: x-large;  
 }
 .title{
     //border: 5px solid red;
     display: flex;
     margin-left: 153px;
-    margin-top: 80px;
+    margin-top: 20px;
     font-size: xx-large;
     font-weight: 600;
 }
@@ -52,7 +52,7 @@ img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.piccard{
+.picescription{
     //border: 2px solid red;
     display: flex;
     flex-direction: column;

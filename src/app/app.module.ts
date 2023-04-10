@@ -13,8 +13,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import { DisplaydoctorComponent } from './displaydoctor/displaydoctor.component';
 import {MatListModule} from '@angular/material/list';
-
-
+import { FormsModule } from '@angular/forms';
+import { AptformComponent } from './aptform/aptform.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import {MatListModule} from '@angular/material/list';
     SignUpComponent,
     DashboardComponent,
     DisplaydoctorComponent,
+    AptformComponent,
     
   ],
   imports: [
@@ -34,7 +37,10 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatMenuModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    MatButtonModule,
+    MatDialogModule
  
   ],
   providers: [],
